@@ -2,7 +2,7 @@ function diff_data = num_diff(data, order, poly_order, framelen)
 %data :    Columns=> features                Rows=> measurmints (obsarbtions)
 %order: derivative order (1, 2, 3....
 %ploy_order<framelen, frame_len  specified as a positive odd integer
-%for derivative data withot smoothing you can use: poly_order=10, framelen=11
+%for derivative data withot smoothing you can use: poly_order=0, framelen=1
 
 plot(data)
 
