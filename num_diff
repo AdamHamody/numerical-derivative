@@ -4,8 +4,6 @@ function diff_data = num_diff(data, order, poly_order, framelen)
 %ploy_order<framelen, frame_len  specified as a positive odd integer
 %for derivative data withot smoothing you can use: poly_order=0, framelen=1
 
-plot(data)
-
 diff_data = diff(data,order,2);
 diff_data_smoothed = sgolayfilt(diff_data,poly_order,framelen)
 
